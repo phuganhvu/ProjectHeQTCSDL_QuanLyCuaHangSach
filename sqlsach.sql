@@ -1,14 +1,4 @@
-﻿CREATE DATABASE ChiTieuDB;
-GO
-USE ChiTieuDB;
 
-CREATE TABLE ChiTieu (
-    ID INT IDENTITY(1,1) PRIMARY KEY,
-    Ngay DATE,
-    Danh_muc NVARCHAR(100),
-    So_tien DECIMAL(10,2),
-    Ghi_chu NVARCHAR(255)
-);
 -- Tạo database (nếu chưa có)
 IF NOT EXISTS(SELECT * FROM sys.databases WHERE name = 'BookStoreManagement')
 BEGIN
